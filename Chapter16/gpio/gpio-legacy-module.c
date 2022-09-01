@@ -26,7 +26,7 @@ static irqreturn_t btn1_pushed_irq_handler(int irq, void *dev_id)
     return IRQ_HANDLED;
 }
 
-static int __init hellowolrd_init(void)
+static int __init helloworld_init(void)
 {
     int retval;
 
@@ -72,7 +72,7 @@ static int __init hellowolrd_init(void)
     return 0;
 }
 
-static void __exit hellowolrd_exit(void)
+static void __exit helloworld_exit(void)
 {
     free_irq(irq, NULL);
     gpio_free(GPIO_LED_RED);
@@ -84,7 +84,7 @@ static void __exit hellowolrd_exit(void)
 }
 
 
-module_init(hellowolrd_init);
-module_exit(hellowolrd_exit);
+module_init(helloworld_init);
+module_exit(helloworld_exit);
 MODULE_AUTHOR("John Madieu <john.madieu@gmail.com>");
 MODULE_LICENSE("GPL");

@@ -5,16 +5,16 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
 
-static int __init hellowolrd_init(void) {
+static int __init helloworld_init(void) {
     pr_info("Hello world!\n");
     return 0;
 }
 
-static void __exit hellowolrd_exit(void) {
+static void __exit helloworld_exit(void) {
     pr_info("End of the world\n");
 }
 
-module_init(hellowolrd_init);
-module_exit(hellowolrd_exit);
+module_init(helloworld_init);
+module_exit(helloworld_exit);
 MODULE_AUTHOR("John Madieu <john.madieu@gmail.com>");
 MODULE_LICENSE("GPL");
