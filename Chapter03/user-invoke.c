@@ -20,7 +20,7 @@ static void delayed_shutdown(struct work_struct *work)
         NULL,
     };
 
-    call_usermodehelper(cmd, argv, envp, 0);
+    call_usermodehelper(cmd, argv, envp, UMH_WAIT_PROC);
 }
 
 static int __init my_shutdown_init( void )
