@@ -59,3 +59,7 @@ is an embedded Linux and kernel engineer living in Paris, France. His main activ
 
 ## Other books by the author
 * [Mastering Linux Device Driver Development](https://www.packtpub.com/product/mastering-linux-device-driver-development/9781789342048?utm_source=github&utm_medium=repository&utm_campaign=9781789342048)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803240060">https://packt.link/free-ebook/9781803240060 </a> </p>
