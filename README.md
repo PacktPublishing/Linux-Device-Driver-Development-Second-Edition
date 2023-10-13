@@ -55,6 +55,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Page 45 (Paragraph 5, line 2,3): `modeprob -r`  _should be_ `modprob -r`
 * Page 48 (Paragraph 2, line 8): `if(wite(fd, buf, 1) < 0) {`  _should be_ `if(write(fd, buf, 1) < 0) {`
+* page 189 (Paragraph 1, line1): `foo-verlay.dts` _should be_ `foo-overlay.dts`
 
 ### Related products
 * Mastering Linux Device Driver Development [[Packt]](https://www.packtpub.com/product/mastering-linux-device-driver-development/9781789342048?utm_source=github&utm_medium=repository&utm_campaign=9781789342048) [[Amazon]](https://www.amazon.com/dp/1785280007)
