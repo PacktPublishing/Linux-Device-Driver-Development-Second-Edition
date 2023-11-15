@@ -377,7 +377,7 @@ fail:
     return err;
 }
 
-static int ee24lc512_remove(struct i2c_client *client)
+static void ee24lc512_remove(struct i2c_client *client)
 {
     struct eep_dev *eeprom = i2c_get_clientdata(client);
 
@@ -389,7 +389,6 @@ static int ee24lc512_remove(struct i2c_client *client)
         kfree(eeprom);
     mutex_unlock(&device_list_lock);
 
-    return 0;
 }
 
 static const struct i2c_device_id ee24lc512_id[] = {
