@@ -17,7 +17,7 @@ MODULE_PARM_DESC(mystr,"this is my char pointer variable");
 MODULE_PARM_DESC(myarr,"this is my array of int");
 MODULE_INFO(my_field_name, "What eeasy value");
 
-static int __init hellowolrd_init(void) {
+static int __init helloworld_init(void) {
     pr_info("Hello world with parameters!\n");
     pr_info("The *mystr* parameter: %s\n", mystr);
     pr_info("The *myint* parameter: %d\n", myint);
@@ -25,11 +25,11 @@ static int __init hellowolrd_init(void) {
     return 0;
 }
 
-static void __exit hellowolrd_exit(void) {
+static void __exit helloworld_exit(void) {
     pr_info("End of the world\n");
 }
 
-module_init(hellowolrd_init);
-module_exit(hellowolrd_exit);
+module_init(helloworld_init);
+module_exit(helloworld_exit);
 MODULE_AUTHOR("John Madieu <john.madieu@gmail.com>");
 MODULE_LICENSE("GPL");
