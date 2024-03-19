@@ -22,8 +22,8 @@ static void work_handler(struct work_struct *work)
                                  struct work_data, my_work); 
     pr_info("Work queue module handler: %s, data is %d\n", __FUNCTION__, my_data->the_data);
     msleep(3000);
+    sleep = 1;
     wake_up_interruptible(&my_data->my_wq);
-    kfree(my_data);
 }
 
 static int __init my_init(void)
@@ -40,6 +40,7 @@ static int __init my_init(void)
     pr_info("I'm goint to sleep ...\n");
     wait_event_interruptible(my_data->my_wq, sleep != 0);
     pr_info("I am Waked up...\n");
+    kfree(my_data);
     return 0;
 }
 
